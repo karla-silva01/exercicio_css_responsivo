@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal da Beleza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Global Beauty</h1>
+            <form action="">
+                <input type="search" placeholder="Busque no site">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+        <div class="botao-menu">
+            <button type="button">Abrir Menu</button>
+        </div>
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    Sobre a loja
+                    
+                <li>
+                    Produtos
+                    </li>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+    <div class="container carousel-imagens" id="carousel-imagens">
+        <img src="./slide1.jpg" alt="Imagem 1">
+        <img src="./slide2.jpg" alt="Imagem 2">
+        <img src="./slide3.jpg" alt="Produtos">
+    </div>
+    <div class="container conteudo">
+        <main>
+            <section class="destaque">
+                <h2>Promoções</h2>
+                <article class="produto">
+                    <a href="#">
+                        <img src="./StockCake-Beauty product display_1727921128.jpg" alt="Imagem">
+                        <h3>
+                            Azul é a cor mais quente. Nova tendência chega com tudo ...
+                        </h3>
+                    </a>
+                </article>
+            </section>
+            <section>
+                <h2>Produtos que você só encontra aqui</h2>
+                <div class="produtos">
+                    <article class="produto">
+                        <a href="#">
+                            <img src="./StockCake-Makeup Application Scene_1727920930.jpg" alt="Imagem">
+                            <h3>
+                                Contorno em pó
+                            </h3>
+                            <h4>R$ 56,99</h4>
+                            <button>Adicionar ao carrinho</button>
+                        </a>
+                    </article>
+                    <article class="produto">
+                        <a href="#">
+                            <img src="./StockCake-Elegant Makeup Application_1727920948.jpg" alt="Imagem">
+                            <h3>
+                                Kit de pincéis
+                            </h3>
+                            <h4>R$ 250,99</h4>
+                            <button>Adicionar ao carrinho</button>
+                        </a>
+                    </article>
+                    <article class="produto">
+                        <a href="#">
+                            <img src="./StockCake-Elegant lipstick application_1727921035.jpg" alt="Imagem">
+                            <h3>
+                                Batom vermelho paixão
+                            </h3>
+                            <h4>R$ 75,99</h4>
+                            <button>Adicionar ao carrinho</button>
+                        </a>
+                    </article>
+                    <article class="produto">
+                        <a href="#">
+                            <img src="./StockCake-Makeup Session Fun_1727920957.jpg" alt="Imagem">
+                            <h3>
+                                Delineador
+                            </h3>
+                            <h4>R$ 36,99</h4>
+                            <button>Adicionar ao carrinho</button>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <section class="novidades">
+                <h2>Queridinhos</h2>
+                <article class="produto">
+                    <a href="#">
+                        <img src="./StockCake-Elegant red lipstick_1727921848.jpg" alt="Imagem">
+                        <h3>
+                            Um clássico é um clássico. Batom vermelho paixão
+                        </h3>
+                    </a>
+                </article>
+                <article class="produto">
+                    <a href="#">
+                        <img src="./StockCake-Elegant skincare products_1727921872.jpg" alt="Imagem">
+                        <h3>
+                            Produtos com ingredientes naturais. O melhor pra você e para o mundo
+                        </h3>
+                    </a>
+                </article>
+                <article class="produto">
+                    <a href="#">
+                        <img src="./StockCake-Colorful cosmetic bottles_1727921108.jpg" alt="Imagem">
+                        <h3>
+                            Seu cabelo sempre muito bem cuidado
+                        </h3>
+                    </a>
+                </article>
+            </section>
+        </aside>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.botao-menu button').click(function(){
+                $('.menu').slideToggle();
+            });
+            
+            $('#carousel-imagens').slick({
+                autoplay:true
+            });
+        })
+    </script>
+</body>
+</html>
